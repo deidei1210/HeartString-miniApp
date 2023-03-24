@@ -1,0 +1,19 @@
+/* pages/barometer/search/search.wxss */
+
+.songimg{
+    margin:8px;
+    width: 60px;
+    height: 55px;
+    border-radius: 7px;
+  }
+  .play{
+    position: relative;
+    left:155px;
+    top:16px;
+    width: 30px;
+    height:30px;
+  }
+  
+
+
+

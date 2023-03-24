@@ -1,0 +1,30 @@
+/* pages/my/feedback/feedback.wxss */
+
+page {
+  background: rgb(187, 224, 237);
+}
+
+.inputData {
+  background-color: rgb(253, 253, 250);
+  width: 80%;
+  height: 300rpx;
+  margin: 5% 10%;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 3px;
+  border-color: #539DB6;
+  padding-left: 5%;
+}
+
+.submit {
+  width: 380rpx;
+  height: 100rpx;
+  color: ivory;
+  padding: 0;
+  padding-top: 4%;
+  padding-left: 9%;
+  margin: 7% 25%;
+  margin-bottom: 0;
+  background-color: #539DB6;
+  border-radius: 40px;
+}

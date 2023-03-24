@@ -1,0 +1,77 @@
+<!--pages/point/point.wxml-->
+
+<!-- <view class="contentList">
+  <view class="user-point-text">我的积分</view>
+  <!-- 占位 -->
+<!-- <view style="height:20rpx"></view>
+  <view class="user-point">{{MyPoint}}</view> -->
+<!-- 占位
+  <view style="height:40rpx"></view> -->
+
+<!-- <block wx:for="{{Gift}}"> -->
+<!-- 占位 -->
+<!-- <view style="height:10rpx"></view>
+      <view class="content">
+        <view class="contentImg">
+          <image src="{{item.image_url}}" mode="widthHeight" lazy-load="false" ></image>
+        </view>
+        <view class="content-right">
+          <view class="title">
+            <view class="titleText">{{item.gift_name}}</view>
+            <view class="introduction">{{item.gift_introduction}}</view>
+          </view>
+          <view class="count">
+            <view class="pointcount">需要 {{item.point}}分</view>
+            <view class="stockcount">剩余 {{item.stock}}</view>
+          </view>
+          <view>
+            {{item.last_time[0]}}{{item.last_time[1]}}{{item.last_time[2]}}{{item.last_time[3]}}年{{item.last_time[5]}}{{item.last_time[6]}}月{{item.last_time[8]}}{{item.last_time[9]}}日前有效
+          </view>
+          <!-- 占位 -->
+<!-- <view style="height:20rpx"></view>
+          <view wx:if="{{item.stock>0}}">
+            <view class="exchange_btn" bindtap="tap_exchange_btn" data-index1="{{item.gift_id}}" data-index2="{{item.point}}" data-index3="{{item.gift_name}}">
+              <view class="exchange_text" style="font-size: 30rpx;padding:10rpx;  text-align: center;">兑换</view>
+            </view>
+          </view>
+          <view wx:else>
+            <view class="exchange_btn_outofstock">
+              <view class="exchange_text" style="font-size: 30rpx;padding:10rpx;  text-align: center;">兑换</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view> -->
+
+
+<scroll-view>
+  <view id="upload">
+    <view id="text">请从本地上传想要分析的音乐：</view>
+    <view id="upLoadImgContainer">
+      <image src="/assets/upload.png" bindtap="chooseFile" id="imgUpload" mode="aspectFill"></image>
+    </view>
+    <view id="text">您上传的音乐是：</view>
+    <!-- 音乐播放器 -->
+    <view class="container" id="upLoadmusic">
+      <image src="{{MusicCoverImg}}" mode="aspectFill" id="MusicCover"></image>
+      <view id="title">高山流水.mp3</view>
+      <view id="player">群星</view>
+    </view>
+    <button class="to-clock-block" bindtap="Analyse" >一键分析</button>
+    <view class="container">
+      <!-- 分割线 -->
+      <view class="divLine"></view>
+    </view>
+
+    <view id="result" wx:if="{{isAnalyse}}">
+
+      <view id="titleResult">分析结果</view>
+      <text style="display:block;text-align: center;color:rgb(32 154 115);font-size: larger;">欢快轻松!</text>
+    </view>
+
+  </view>
+
+
+
+</scroll-view>

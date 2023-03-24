@@ -1,0 +1,48 @@
+<!--pages/barometer/barometer.wxml-->
+<scroll-view class="content">
+  <!-- 搜索框 -->
+  <view>
+    <image src="/assets/search.png" id="search-icon"></image>
+    <input type="text" id="search" placeholder="输入情绪关键词"/>
+    <button id="search-button" bindtap="SearchSong">搜索</button>
+  </view>
+  <!-- 本周心情表 -->
+  <view class="chart-container">
+    <view class="line-block">
+      <view class="title">本周心情表</view>
+      <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas"></canvas>
+    </view>
+    <view class="mood-block">
+      <view class="mood-desc">本周您的心情平均得分为：\n<text style="font-family: HelloFont WenYiHei;font-size:50px;font-weight: bolder;">17.5！</text></view>
+    </view>
+  </view>
+  <!-- 推荐歌单 -->
+  <view style="margin-left:10px;margin-top:52px;">根据您的情绪我们推荐以下歌单></view>
+  <!-- 横向滑动栏 -->
+  <scroll-view class="scroll" scroll-x="true">
+    <view wx:key="{{index}}" wx:for="{{SongCover}}" style="width: 100px;display: inline-block;margin:8px;">
+      <image src="{{item.path}}" class="scroll-image"></image>
+      <text class="name">{{item.name}}</text>
+    </view>
+  </scroll-view>
+  <!-- 推荐单曲 -->
+  <view style="margin-left:10px;margin-top:11px;">根据您的情绪我们推荐以下单曲></view>
+  <view wx:for="{{SoloCover}}" wx:key="{{index}}" style="display: flex;">
+    <image src="{{item.path}}" class="songimg"></image>
+    <text style="margin-top: 5px;">{{item.name}}\n{{item.actor}}</text>
+    <!-- <image src="/assets/play.png" class="play" wx:if="{{!IsPlay}}"></image>
+    <image src="/assets/pause.png" class="play" wx:if="{{IsPlay}}"></image> -->
+
+    <!--当前为停止状态  -->
+    <view class='audioImg' wx:if="{{item.IsPlay==false}}" bindtap='play' data-num="{{index}}">
+      <image class="play" src='/assets/play.png' />
+    </view>
+    <!--当前为播放状态  -->
+    <view class='audioImg' wx:if="{{item.IsPlay==true}}" bindtap='stop' data-num="{{index}}">
+      <image class="play" src='/assets/pause.png' />
+    </view>
+
+  </view>
+
+
+</scroll-view>

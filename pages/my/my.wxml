@@ -1,0 +1,23 @@
+<!-- pages/owner.wxml -->
+<view class="background">
+<view class="_background"></view>
+    <view class="avator">
+        <view class="_background_s"></view>
+        <van-image round width="5rem" height="5rem" fit="contain" src="/pages/src/yang.jpg" />
+        <!-- <text class="welcome">{{name}}</text>
+        <text class="introduction">{{introduction}}</text> -->
+        <text class="welcome">{{name}}</text>
+        <text class="introduction">{{introduction}}</text>
+    </view>
+    <van-cell-group class="cell">
+        <van-cell icon="contact" color="red" size="large" title="注册" is-link bindtap="registerBtn" />
+        <!-- <van-cell icon="closed-eye" size="large" title="查看个人积分" is-link bind:click="pointsBtn"/>
+        <van-cell icon="gift-o" size="large" title="礼品" is-link bind:click="giftBtn"/> -->
+        <van-cell icon="edit" size="large" title="修改个人说明" is-link bind:click="changeInfoBtn"/>
+        <van-cell icon="browsing-history-o" size="large" title="关于我们" is-link bind:click="aboutBtn"/>
+        <van-cell icon="envelop-o" size="large" title="帮助与反馈" is-link bind:click="helpBtn"/>
+        <van-cell icon="coupon-o" size="large" title="隐私政策" is-link bind:click="protocolBtn"/>
+    </van-cell-group>
+</view>
+<button class="exit">退出登录</button>
+<van-dialog id="van-dialog" />

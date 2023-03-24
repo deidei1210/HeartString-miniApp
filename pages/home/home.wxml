@@ -1,0 +1,95 @@
+<!--pages/home/home.wxml-->
+<scroll-view class="container" scrollY="true">
+
+  <view>
+    <view class="scontainer">
+      <!-- 轮播图 -->
+      <swiper autoplay="true" interval="3000" indicator-dots="true" indicator-color="white" indicator-active-color="grey" circular="true">
+        <swiper-item>
+          <image src="/swiper-image/item4.png"></image>
+        </swiper-item>
+        <swiper-item>
+          <image src="/swiper-image/item5.png"></image>
+        </swiper-item>
+        <swiper-item>
+          <image src="/swiper-image/item6.png"></image>
+        </swiper-item>
+      </swiper>
+    </view>
+    <!-- 更多功能 -->
+    <more-func></more-func>
+    <!-- 积分王者 -->
+    <view class="integral-rank">
+      <view class="rank-header">
+        <view class="left-section">
+          <view class="icon">
+            <image src="/assets/crown.svg"></image>
+          </view>
+          <view>积分王者</view>
+        </view>
+        <view class="right-section" bindtap="goRank">
+          <view>排行榜</view>
+          <image class="right-arrow" src="/assets/right-arrow.svg"></image>
+        </view>
+      </view>
+      <!-- 打卡信息 -->
+
+      <!-- <view class="user-info">
+        <view class="basic-info">
+          <image class="user-avatar" src="{{userInfo.avatarUrl?userInfo.avatarUrl:defaultUserHead}}"></image>
+          <view class="user-nickname">{{userInfo.nickName}}</view>
+        </view>
+        <view class="integral-info">
+          <view class="integral-title">我的积分</view>
+          <view class="integral-value">{{point}}</view>
+        </view>
+      </view> -->
+      <!-- <view class="accumulate-integral">
+        <view class="accumulate-item">
+          <view class="accumulate-title">累计打卡(天)</view>
+          <view class="accumulate-value">{{count}}</view>
+        </view>
+        <view class="accumulate-item">
+          <view class="accumulate-title">连续打卡(天)</view>
+          <view class="accumulate-value">{{maxContinue}}</view>
+        </view>
+      </view> -->
+
+      <view class="rank-info">
+        <view wx:for="{{rankHeads}}" wx:key="key" class="head-item" style="left:{{40*index}}rpx">
+          <image src="{{item}}"></image>
+        </view>
+        <view class="rank-desc" style="margin-left:{{50*rankHeads.length}}rpx">{{count_users}}人参与|{{record_times}}次打卡</view>
+      </view>
+      <view class="calendar-info">
+        <image src="/assets/calendar.svg" class="icon"></image>
+        <view class="calendar-value">2021.6.1-2021.6.30(共30天)</view>
+      </view>
+    </view>
+    <!-- 未打卡 -->
+    <button wx:if="{{!isClock}}" class="to-clock-block" bindtap="onGetUserProfile">去打卡</button>
+    <!-- 已打卡 -->
+    <view wx:else class="clocked-block">
+      <view class="clocked-title">今日心情</view>
+      <view class="mood-state">
+        <view class="state-value">非常好</view>
+        <view class="update-mood">更新 ></view>
+      </view>
+    </view>
+    <!-- 占位 -->
+    <!-- <view class="holder"></view> -->
+  </view>
+  <view class="recommend-list">
+    <view class="recommend-title">解压锦囊</view>
+    <view class="recommend-item">
+      <block wx:for="{{articles}}">
+        <navigator url="pages/Recommend/Recommend" bindtap='goArticle' data-urlnext='{{item.nextpage}}' class="rcontainer">
+          <image src='{{item.articleImage}}' mode='aspectFill' class='article-image'></image>
+          <view class='article-title'>{{item.articleTitle}}</view>
+        </navigator>
+      </block>
+    </view>
+    <view class="nomore">暂无更多哦</view>
+  </view>
+
+</scroll-view>

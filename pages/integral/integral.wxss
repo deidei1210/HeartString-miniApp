@@ -1,0 +1,109 @@
+scroll-view {
+  height: 672px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+#text {
+  margin: 10rpx 20rpx;
+  font-size: 38rpx;
+}
+
+#imgUpload {
+  width: 364rpx;
+  height: 304rpx;
+}
+
+#upLoadImgContainer {
+  width: 364rpx;
+  height: 304rpx;
+  margin: 41rpx auto;
+}
+
+.container {
+  margin: 30rpx auto;
+  width: 649.5rpx;
+  background: #EAEEE8;
+  border-radius: 7rpx;
+  box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.16);
+}
+
+#upLoadmusic {
+  height: 190.5rpx;
+
+}
+
+#MusicCover {
+  /* display: flex; */
+  position: relative;
+  left: 10px;
+  top: 15px;
+  width: 70px;
+  height: 70px;
+}
+
+#play {
+  display: flex;
+}
+
+#title {
+  position: relative;
+  left: 100px;
+  top: -40.34px;
+  opacity: 1;
+
+  font-family: Source Han Sans CN;
+  font-size: 15px;
+  font-weight: normal;
+  letter-spacing: 0em;
+
+  color: #3D3D3D;
+}
+
+#player{
+  position: relative;
+  left: 100px;
+  top: -30.34px;
+  opacity: 1;
+
+  font-family: Source Han Sans CN;
+  font-size: 15px;
+  font-weight: normal;
+  letter-spacing: 0em;
+
+  color: #3D3D3D;
+}
+
+#result {
+  margin: 20px auto;
+}
+#titleResult{
+  margin:20px auto;
+  text-align: center;
+  font-size:large;
+}
+
+.to-clock-block {
+  width: 200rpx;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 100);
+  font-size: 14px;
+  text-align: center;
+  font-family: Arial;
+  font-weight: 600;
+  color: rgb(32 154 115);
+  border: 3px solid rgb(32 154 115);
+  height: 80rpx;
+  line-height: 75rpx;
+  margin: 35rpx auto;
+  padding: 0;
+}
+/*分割线样式*/
+.divLine{
+  background: #E0E3DA;
+  width: 100%;
+  height: 5rpx;
+ }
+ 
+

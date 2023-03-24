@@ -1,0 +1,15 @@
+<!-- 推荐单曲 -->
+  <!-- 推荐单曲 -->
+  <view wx:for="{{SoloCover}}" wx:key="{{index}}" style="display: flex;">
+    <image src="{{item.path}}" class="songimg"></image>
+    <text style="margin-top: 5px;">{{item.name}}\n{{item.actor}}</text>
+    <!--当前为停止状态  -->
+    <view class='audioImg' wx:if="{{item.IsPlay==false}}" bindtap='play' data-num="{{index}}">
+      <image class="play" src='/assets/play.png' />
+    </view>
+    <!--当前为播放状态  -->
+    <view class='audioImg' wx:if="{{item.IsPlay==true}}" bindtap='stop' data-num="{{index}}">
+      <image class="play" src='/assets/pause.png' />
+    </view>
+
+  </view>

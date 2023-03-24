@@ -1,0 +1,76 @@
+/* pages/personal/personal.wxss */
+
+.setting{
+    position:absolute;
+    width: 30px;
+    height: 30px;
+    top:10px;
+    margin:10px 20px;
+}
+button {
+    /* 矩形 16 */
+    position: absolute;
+    left: 231px;
+    top: 134.77px;
+    width: 48.04px;
+    height: 26.58px;
+    border-radius: 11px;
+    opacity: 1;
+
+    background: #EAEEE8;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 26.58px;
+}
+
+.infoBlock{
+    display: inline-block;
+    position:relative;
+    top:-71px;
+    width: 130px;
+    height: 66px;
+    /* background-color: aquamarine; */
+    border-right:1.5px solid #EAEEE8;
+    color:azure;
+    text-align: center;
+}
+.choice{
+    position:relative;
+    top:-51px;
+    left:24px;
+}
+.choice-icon{
+    display:inline-block;
+    margin-left:38px;
+}
+.diary-title{
+    position:relative;
+    left:11px;
+    top:-22px;
+    font-size: 19px;
+    font-weight: bold;
+}
+.diary{
+    width: 355.27px;
+    height: 108.42px;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+    margin:15px auto;
+}
+.diary-image{
+    width: 138.18px;
+    height: 84.38px;
+    border-radius: 9px;
+    position:relative;
+    top:12px;
+    left:10px;
+}
+.diary-name{
+    display: flex;
+    white-space: pre-line;  
+    position:relative;
+    top:-69px;
+    left:155px;
+    width:195px;
+}
+

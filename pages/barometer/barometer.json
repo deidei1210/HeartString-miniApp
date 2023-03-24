@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "歌曲推荐",
+  "usingComponents": {
+    "more-func": "/components/more-func"
+  }
+}

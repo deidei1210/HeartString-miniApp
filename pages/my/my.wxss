@@ -1,0 +1,66 @@
+/* pages/owner.wxss */
+
+.avator {
+    margin-left: 15rpx;
+    padding-left: 30rpx;
+}
+
+._background {
+    width: 750rpx;
+    height: 1100rpx;
+    background-color: #F5FAF3;
+    float: left;
+    border-radius: 50px;
+    position: absolute;
+    left: 0;
+    top: -100rpx;
+}
+
+._background_s {
+    width: 650rpx;
+    height: 220rpx;
+    background-color: #ffffff;
+    border-radius: 20px;
+    position: absolute;
+    left: 50rpx;
+    top: 50rpx;
+}
+
+.welcome {
+    position: absolute;
+    top: 110rpx;
+    left: 310rpx;
+    font-weight: bold;
+    font-size: 40rpx;
+}
+
+.introduction {
+    position: absolute;
+    top: 170rpx;
+    left: 310rpx;
+    font-weight: normal;
+    font-size: 30rpx;
+    color: #5CA2FF;
+}
+
+.van-cell {
+    margin-bottom: 15rpx;
+}
+
+.van-image {
+    margin-left: 50rpx;
+    margin-top: 80rpx;
+    margin-bottom: 50rpx;
+}
+
+.exit{
+    width: 150px;
+    margin:10px auto;
+    font-size: 30px;
+    font-weight: bold;
+    color:white;
+    background-color: rgb(231, 125, 125);
+    border-radius: 8px;
+    border:3px solid rgb(241, 233, 195);
+}
+

@@ -1,0 +1,28 @@
+ <!-- pages/learn.wxml -->
+<!--<text wx:if="{{isshow}}">{{value}}</text>
+<button bindtap="btn">{{btnName}}</button>
+<view wx:for="{{arr}}" wx:for-item="shuju">{{index}}     {{shuju}}</view> -->
+
+<van-divider contentPosition="center" textColor="##F8F8F8" fontSize="25">注册</van-divider>
+<van-cell-group>
+  <van-field
+   model:value="{{ user_id }}"
+   type="number"
+    required
+    clearable
+    label="学号"
+    placeholder="请输入学号"
+    bind:click-icon="onClickIcon"
+  />
+  <van-field
+   model:value="{{ user_name }}"
+    label="姓名"
+    placeholder="请输入姓名"
+    required
+  />
+</van-cell-group>
+<van-toast id="van-toast" />
+<button open-type="getPhoneNumber" bindgetphonenumber="getPhoneData" disabled="{{registerBtn}}" class="regis">注册</button>
+<van-radio-group value="2" bind:change="onChange">
+  <van-radio name="1"> <view bindtap="goStatement">我已详细阅读并同意*****协议</view></van-radio>
+</van-radio-group>

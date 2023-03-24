@@ -1,0 +1,69 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/barometer/barometer",
+    "pages/integral/integral",
+    "pages/records/records",
+    "pages/my/my",
+    "pages/rank/rank",
+    "pages/statement/statement",
+    "pages/personal/personal",
+    "custom-tab-bar/index",
+    "pages/Recommend/Recommend",
+    "pages/Recommend/Articles/Article1",
+    "pages/Motiontest/Motiontest",
+    "pages/Moreinfo/Moreinfo",
+    "pages/Motiontest/Questions/Questions",
+    "pages/Motiontest/Testend/Testend",
+    "pages/Moreinfo/Info/Info",
+    "pages/points/points",
+    "pages/my/collect/collect",
+    "pages/my/setting/setting",
+    "pages/my/mychange/mychange",
+    "pages/my/feedback/feedback",
+    "pages/music/music",
+    "pages/barometer/search/search"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#55BB8A",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "networkTimeout": {
+    "request": 15000,
+    "downloadFile": 15000
+  },
+  "tabBar": {
+    "custom": false,
+    "color": "#000000",
+    "selectedColor": "#55BB8A",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/assets/tabbar/index.png",
+        "selectedIconPath": "/assets/tabbar/index-active.png"
+      },
+      {
+        "pagePath": "pages/integral/integral" ,
+        "text": "歌曲分析",
+        "iconPath": "/assets/tabbar/analyse.png",
+        "selectedIconPath": "/assets/tabbar/analyse-active.png"
+      },
+      {
+        "pagePath": "pages/barometer/barometer",
+        "text": "歌曲推荐",
+        "iconPath": "/assets/tabbar/music.png",
+        "selectedIconPath": "/assets/tabbar/music-active.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "我的",
+        "iconPath": "/assets/tabbar/home.png",
+        "selectedIconPath": "/assets/tabbar/home-active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

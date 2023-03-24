@@ -1,0 +1,67 @@
+/* pages/home/home.wxss */
+
+page {
+    background: rgb(221, 238, 224);
+}
+
+.head {
+    display: flex;
+    font-size: 25px;
+    font-style: blod;
+    font-family: "黑体";
+    color: rgb(59, 133, 97);
+    margin-top: 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputData {
+    background-color: rgb(253, 253, 250);
+    width: 80%;
+    height: 300rpx;
+    margin: 5% 10%;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 3px;
+    border-color: rgb(59, 133, 97);
+    padding-left: 5%;
+}
+
+.lable {
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.lable>view {
+    width: 140rpx;
+    height: 60rpx;
+    color: #3C5E5C;
+    background-color: rgb(131, 203, 172);
+    display: inline-table;
+    justify-content: center;
+    margin: 10rpx;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #eef1f1;
+    padding-left: 6%;
+    padding-top: 1%;
+}
+
+.submit {
+    width: 380rpx;
+    height: 100rpx;
+    color: ivory;
+    padding: 0;
+    padding-top: 4%;
+    padding-left: 9%;
+    margin: 7% 25%;
+    margin-bottom: 0;
+    background-color: rgb(59, 133, 97);
+    border-radius: 40px;
+}
+
+.lable>view:active {
+    background-color: rgb(238, 152, 39);
+    transition-duration: 10ms;
+}

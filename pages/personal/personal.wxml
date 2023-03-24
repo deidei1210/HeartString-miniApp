@@ -1,0 +1,42 @@
+<!--pages/personal/personal.wxml-->
+<scroll-view>
+    <view class="personal-bar">
+        <image src="/assets/PersonalPage.png" style="z-index: -1;position: absoluteleft; left:0px;top: 75.49px;width: 413.39px;height: 275.71px;"></image>
+        <!-- 打开用户设置界面的按钮 -->
+        <image src="/assets/UserSetting.png" class="setting" bindtap="PageToMy"></image>
+        <view class="Profile">
+            <image src="{{profilePhoto}}" style="display:block;height: 74px;width:74px;border-radius: 35px;border-color: aliceblue;position: absolute;left: 175px;top:50.65px;"></image>
+            <view style="position: absolute;left: 171px;top: 134.35px;width: 46px;height: 31px;font-size: 21px;font-weight: normal;letter-spacing: 0em;color: #FFFFFF;">{{Nico}}</view>
+            <button>关注</button>
+        </view>
+        <block class="info">
+            <view class="infoBlock">
+                <view>已打卡</view>
+                <view>{{Record}}</view>
+            </view>
+            <view class="infoBlock">
+                <view>心情平均值</view>
+                <view>{{Moodavg}}</view>
+            </view>
+            <view class="infoBlock">
+                <view>访客</view>
+                <view>{{GuestView}}</view>
+            </view>
+        </block>
+    </view>
+    <view class="choice">
+        <view wx:key="{{index}}" wx:for="{{BarIcon}}" class="choice-icon">
+            <image src="{{item.path}}" style="width:38.21px;height:38.21px;position:relative;left:11px;"></image>
+            <view>{{item.name}}</view>
+        </view>
+    </view>
+    <view class="content">
+        <view class="diary-title">{{Nico}}的心情日记</view>
+        <view wx:key="{{index}}" wx:for="{{Diary}}" class="diary">
+            <image src="{{item.path}}" class="diary-image"></image>
+            <view class=".diary-name">{{item.name}}</view>
+        </view>
+    </view>
+    <view style="text-align: center;margin-top: 10px;">显示更多>></view>
+    <view style="margin:20px;height:10px;"></view>
+</scroll-view>

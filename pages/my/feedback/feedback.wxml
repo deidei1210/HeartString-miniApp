@@ -1,0 +1,6 @@
+<!--pages/my/feedback/feedback.wxml-->
+<view>
+    <input class="inputData" maxlength="15" bindinput="inputData" placeholder="请输入反馈" />
+</view>
+
+<view class="submit" bindtap="submitBtn">-----提交反馈-----</view>
